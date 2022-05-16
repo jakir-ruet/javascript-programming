@@ -13,7 +13,7 @@ function OddEven(num) {
         {
             console.log(`the number is neither odd nor even ${num}`)
             }
-            if (num % 2 != 0 ) {
+            if (num % 2 !== 0 ) {
                 console.log(`the number is odd ${num}`);
             }
             if(num % 2 === 0){
