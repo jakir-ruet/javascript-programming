@@ -1,22 +1,22 @@
-class mobilePhone{
-    //declare private field for encapsulation
-    #warranty
-    constructor(name, model, company, warranty) {
-        this.name = name
-        this.model = model
-        this.company = company
-        this.#warranty = warranty
+function Worker(name, designation, wage) {
+    this.name = name
+    this.designation = designation
+    this.wage = wage
+
+    //Abstructed variable here
+    let bonus = 1000
+
+    //Abstructed method here
+    let calWage = function () {
+        let totalWage = wage + bonus
+        console.log(`Total Payable = ${totalWage}`)
     }
-    phoneDetails(){
-        this.#warrantyVoid()
-        console.log(`This my phone ${this.name}, model is ${this.model}, company is ${this.company}`)
-    }
-    //declare private method for encapsulation
-    #warrantyVoid(){
-        console.log(`warranty period is ${this.#warranty}`)
+
+    this.empDetails = function () {
+        console.log(`Name is ${this.name}, Designation is ${this.designation}`)
+        calWage()
     }
 }
 
-let myphone = new mobilePhone("Nokia", "Nokia-4.2", "Nokia", 3)
-myphone.phoneDetails()
-//myphone.#warrantyVoid()
+let empDetails = new Worker("Jakir", "Manager", 5000)
+empDetails.empDetails()
