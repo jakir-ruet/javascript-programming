@@ -20,7 +20,7 @@ function primeNumberInterval(start, end) {
             {
                 for (let j = 2; j < i; j++)
                 {
-                    if(i % j == 0)
+                    if( i % j === 0 )
                     {
                         isPrime = false
                         break

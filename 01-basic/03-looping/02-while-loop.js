@@ -4,9 +4,9 @@
 //     i++
 // }
 
-var isNumber = true
+let isNumber = true;
 while (isNumber) {
-    var randNumber = Math.floor(Math.random() * 100 + 1)
+    const randNumber = Math.floor(Math.random() * 100 + 1);
     if (randNumber === 10) {
         console.log("you have winner")
         isNumber = false
