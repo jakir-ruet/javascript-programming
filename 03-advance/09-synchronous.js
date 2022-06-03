@@ -7,6 +7,7 @@ const taskTwo = () => {
 const dataLoading = () => {
    console.log("This is task Three")
 }
+//setting asynchronous 
 const taskThree = () => {
    setTimeout(dataLoading, 1000)
    //console.log("This is task Three")
