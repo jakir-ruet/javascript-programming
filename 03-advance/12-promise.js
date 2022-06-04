@@ -9,3 +9,11 @@ const myPromise = new Promise((resolve, reject) => {
 })
 
 console.log(myPromise)
+myPromise
+   .then((res) => {
+      console.log(res)
+   })
+   .catch((err) => {
+      console.log(err.message)
+   })
+console.log("end")
