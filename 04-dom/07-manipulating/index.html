@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM Manipulating</title>
+</head>
+
+<body>
+
+   <div></div>
+   <script>
+      //create required elements
+      let input = document.createElement("input")
+      let button = document.createElement("input")
+
+      let divT = document.getElementsByTagName("div")[0]
+
+      //set properties
+      button.type = "button"
+      button.value = "Submit"
+
+      //set required attributes in el
+      input.setAttribute("type", "text")
+      input.setAttribute("placeholder", "Enter your name")
+      input.required = true
+
+      //ad Event in the submit button 
+      button.addEventListener("click", () => {
+
+         let h1 = document.createElement("h1")
+         let { value: name } = input
+         if (!name) {
+
+            h1.innerHTML = `Enter a valid name!`
+
+            divT.appendChild(h1)
+         } else {
+
+            h1.innerHTML = `Hello, ${name}!`
+
+            divT.appendChild(h1)
+         }
+      })
+
+      //link the element in the div tag
+      divT.appendChild(input)
+      divT.appendChild(button)
+   </script>
+
+</body>
+
+</html>
