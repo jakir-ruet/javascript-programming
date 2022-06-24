@@ -40,8 +40,8 @@ console.log("==========nested destructure=============")
 console.log(`The ${room1} area is ${area1}`)
 console.log(`The ${room2} area is ${area2}`)
 
-//skiping destructuring
+//skipping destructuring
 let arr = [1, 3, 5, 8, 9]
-//skiping the value
+//skipping the value
 let [a, , , x] = arr
 console.log(`a=${a}, x=${x} `)
