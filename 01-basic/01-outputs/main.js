@@ -6,3 +6,5 @@ window.alert('Welcome to alert method!');
 
 const myQuerySelector = document.querySelector('p');
 myQuerySelector.innerHTML = 'Hello, querySelector!';
+
+//we need to study of console methods such as asserts, table, info & so on...

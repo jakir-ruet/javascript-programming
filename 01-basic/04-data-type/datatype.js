@@ -11,5 +11,17 @@
     // RegExp	    represents regular expression
     // function     represents a block of code designed to perform a particular task
 
+    let a = 20 + 30 + ' ' + 'hello world';
+    let b = 'hello world' + ' ' + 20 + 30;
+    console.log('======follow the order precedence======');
+    console.log(a);
+    console.log(b);
+
+    //here changing the data type dynamically that why this JS is call dynamically data type
+    let myVar; //undefined
+    myVar = 87;
+    myVar = 'hello world'
+    console.log(myVar);
+
 
 
