@@ -10,5 +10,5 @@ catch (error) {
    // console.log(error.message)
 }
 finally {
-   alert("finall, execution")
+   alert("final, execution")
 }

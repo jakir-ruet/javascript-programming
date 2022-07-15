@@ -3,10 +3,10 @@ function Worker(name, designation, wage) {
     this.designation = designation
     this.wage = wage
 
-    //Abstructed variable here
+    //Abstracted variable here
     let bonus = 1000
 
-    //Abstructed method here
+    //Abstracted method here
     let calWage = function () {
         let totalWage = wage + bonus
         console.log(`Total Payable = ${totalWage}`)

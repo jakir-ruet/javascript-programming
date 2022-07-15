@@ -17,6 +17,6 @@ class mobilePhone{
     }
 }
 
-let myphone = new mobilePhone("Nokia", "Nokia-4.2", "Nokia", 3)
-myphone.phoneDetails()
-//myphone.#warrantyVoid()
+let myPhone = new mobilePhone("Nokia", "Nokia-4.2", "Nokia", 3)
+myPhone.phoneDetails()
+//myPhone.#warrantyVoid()

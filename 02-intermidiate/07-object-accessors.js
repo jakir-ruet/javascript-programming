@@ -3,13 +3,13 @@ const myGetterFunction = {
     firstName: "Jakir",
     lastName: "Ahmed",
     language: "bn",
-    langFuntion: function () {
+    langFunction: function () {
         return this.firstName+ " " + this.lastName
     }
 }
 let end = performance.now()
 
-console.log(myGetterFunction.langFuntion())
+console.log(myGetterFunction.langFunction())
 console.log(`${end - start}ms`)
 
 let start1 = performance.now()
@@ -31,14 +31,14 @@ const mySetterFunction = {
     firstName: "Jakir",
     lastName: "Ahmed",
     language: "",
-    langFuntion: function (lg = "") {
+    langFunction: function (lg = "") {
         this.language = lg
         console.log("lang updated")
     }
 }
 let end2 = performance.now()
 
-mySetterFunction.langFuntion("Bangla")
+mySetterFunction.langFunction("Bangla")
 console.log(mySetterFunction.language)
 console.log(`${end2 - start2}ms`)
 
