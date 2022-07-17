@@ -1,4 +1,5 @@
 let arr = [4, 5, 6, 7, 3, 2];
+let myArr = [4, 5, 6, 7, 3, 2]
 let mapArr = arr.map(function(mapArr){
    return mapArr * 4;
 });
@@ -17,6 +18,15 @@ console.log(`own function result is ${multiplyArr(arr)}`);
 
 
 
+//multiplying the array certain values
+function multiplySomeValues(myArr, n){
+   let product = 1;
+   for (let i = 0; i < n; i++) {
+      product *= myArr[i];
+   }
+   console.log(`product is ${product}`);
+}
+multiplySomeValues(myArr, 3);
 
 //multiplying using recursion
 const multiplyWithRecursion = arr => {
