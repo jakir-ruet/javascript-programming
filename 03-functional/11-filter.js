@@ -38,6 +38,23 @@ let bigNumber = students.filter(function(e){
 console.log('using function');
 console.log(bigNumber);
 
+//using callback function
+function mySelection(arr, callback) {
+   let myNewSelection = [];
+   for (i = 0; i < arr.length; i++) {
+      if (callback(arr[i])) {
+         myNewSelection.push(arr[i]);
+      }
+   }
+   return myNewSelection;
+};
+
+let myCb = mySelection(arr, function (element) {
+   return element % 2 == 1;
+});
+
+console.log('=============odd even filter is' + ' ' + myCb);
+
 //using arrow function
 let bigNumbers = students.filter(item => item.gpa >= 3.50);
 console.log('using arrow function');

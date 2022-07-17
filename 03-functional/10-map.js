@@ -15,9 +15,6 @@ function multiplyArr(arr){
 }
 console.log(`own function result is ${multiplyArr(arr)}`);
 
-
-
-
 //multiplying the array certain values
 function multiplySomeValues(myArr, n){
    let product = 1;
