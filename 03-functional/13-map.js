@@ -14,7 +14,9 @@ function multiplyArr(arr){
 }
 console.log(`own function result is ${multiplyArr(arr)}`);
 
-//multiplying the array certain values
+
+
+
 
 //multiplying using recursion
 const multiplyWithRecursion = arr => {
@@ -26,8 +28,4 @@ const multiplyWithRecursion = arr => {
 }
 console.log(`recursion result is ${multiplyWithRecursion(arr)}`);
 
-console.log(arr); //checking the array her
-let reduceArr = arr.reduce(function(preValue, postValue){
-   return preValue * postValue;
-});
-console.log(`using reduce is ${reduceArr}`);
+console.log(arr); //checking the array here
