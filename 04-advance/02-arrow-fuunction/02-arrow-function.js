@@ -1,27 +1,40 @@
+//function in es3
+function esThreeFunction() {
+      console.log("This is the function in es5")
+}
+esThreeFunction()
+
+//function in es5
+var esFiveFunction = function (x, y) {
+      return x * y
+}
+var b = esFiveFunction(3, 4)
+console.log(`This is esFive function ${b}`)
+
+//function in es6 with return
+const esSixFunctionReturn = (a, b) => {
+      return a * b
+}
+let c = esSixFunctionReturn(3, 5)
+console.log(`this is es6 arrow function with return ${c}`)
+
+//function in es6 without return
+const esSixFunction = (a, b) => a * b
+let d = esSixFunction(3, 5)
+console.log(`this is es6 arrow function without return ${d}`)
+
 var myObject = [
       {
             id: 54001,
-            name: "Fahmid",
+            name: "Rahim",
             designation: "CTO",
             point: 3.65
       },
       {
             id: 54002,
-            name: "Tahmid",
-            designation: "Software Engineer",
+            name: "Karim",
+            designation: "PE",
             point: 2.98
-      },
-      {
-            id: 54003,
-            name: "Touhida",
-            designation: "Chainman",
-            point: 2.65
-      },
-      {
-            id: 54004,
-            name: "Jakir",
-            designation: "Managing Director",
-            point: 3.00
       }
 ]
 console.log(myObject)
