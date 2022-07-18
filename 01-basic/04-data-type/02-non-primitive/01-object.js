@@ -1,6 +1,6 @@
 // By object literal
 console.log("==============By object literal=============");
-var methodName = "setprops"    
+var methodName = "setProps"    
 let myObj = {
      name: "Toyoto", 
      model: 500, 
@@ -21,7 +21,7 @@ let myObj = {
 console.log(myObj)
 console.log(myObj.name)
 myObj.details()
-myObj.setprops("red", 56)
+myObj.setProps("red", 56)
 console.log(myObj);
 
 // By creating instance of Object
