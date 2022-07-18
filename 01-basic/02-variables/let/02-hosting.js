@@ -7,5 +7,5 @@ console.log(carName);
 
 // let carName;
 // carName = 'undefined'  //assign undefined as default values.
-// carName = 'Toyoto'; //then do no putting or taking the carname into this variable. its call temporal dead zone
+// carName = 'Toyoto'; //then do no putting or taking the car name into this variable. its call temporal dead zone
 // console.log(carName);
