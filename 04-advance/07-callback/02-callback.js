@@ -21,7 +21,7 @@ const taskFour = () => {
 }
 
 taskOne()
-taskTwo(function myCalback() {
+taskTwo(function myCallback() {
    taskThree(function myCallback2() {
       taskFour()
    })

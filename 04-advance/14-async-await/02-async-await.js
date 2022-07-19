@@ -1,7 +1,7 @@
 console.log("welcome to Bangladesh")
 const taskOne = () => {
    return new Promise((resolve, reject) => {
-      resolve("Task one completed")
+      resolve("Task one is completed")
    })
 }
 const taskTwo = () => {

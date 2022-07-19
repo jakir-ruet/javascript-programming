@@ -3,7 +3,7 @@ function mySquare(a) {
 }
 //mySquare(9)
 
-function higerOrderFunction(b, callback) {
+function higherOrderFunction(b, callback) {
    callback(b)
 }
-higerOrderFunction(10, mySquare)
+higherOrderFunction(10, mySquare)
