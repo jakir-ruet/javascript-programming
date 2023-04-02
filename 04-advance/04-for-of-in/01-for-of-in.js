@@ -14,3 +14,6 @@ let myDetails = {
 for (let x in myDetails) {
    console.log(`result 'for in' in object, ${x} : ${myDetails[x]}`)
 }
+// 'for in' vs 'for of'
+// for in iterates over all enumerable propeties of an object. it doesn't iterate over a collection such as 'Array', 'Map' or 'set'
+// for of iterates a collection, rather than object.
